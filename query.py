@@ -1,14 +1,20 @@
 import numpy as np
-# import mysql.connector
-# import json
-# import csv, _sqlite3
-# from matplotlib import pyplot as plt
-# import matplotlib.pyplot as plt
-
 import pandas as pd
+from sqlalchemy import create_engine
 
 
-df = pd.read_csv(r'C:\Users\Luma\PycharmProjects\GroupProject\googleplaystore.csv')
+hostname = "18.217.178.166"
+uname = "pythoneverything"
+pwd = "python123"
+dbname = "googleplaystore"
+
+engine = create_engine("mysql+pymysql://{user}:{pw}@{host}/{db}"
+            .format(host=hostname, db=dbname, user=uname, pw=pwd))
+
+
+df = pd.read_sql('googleplaystore',engine)
+connection = engine.connect()
+
 
 
 # LUMA's PART
@@ -33,6 +39,8 @@ print(df.sort_values(by="Rating"))  # sort it by rating
 print("'Sort The Apps By Size'")
 print(df.sort_values(by="Size"))    # sort it by size
 
+
+connection.close()
 
 
 
