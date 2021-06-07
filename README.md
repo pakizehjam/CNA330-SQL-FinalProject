@@ -1,19 +1,19 @@
 # CNA330-SQL-FinalProject
 
-Date: 12/8/2020
+ Date: 12/8/2020
 
-Team Members:
+ Team Members:
 
-Luma Naser
+ Luma Naser
 
-Hasan Hasan
+ Hasan Hasan
 
-Mohammad pakizeh jam
+ Mohammad pakizeh jam
 
-Thanks for Justin!
+ Thanks for Justin!
 
-Data source: https://www.kaggle.com/lava18/google-play-store-apps
+ Data source: https://www.kaggle.com/lava18/google-play-store-apps
 
-Github Link: https://github.com/luma24/CNA330-SQL-FinalProject
+ Github Link: https://github.com/luma24/CNA330-SQL-FinalProject
 
            
